@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TextView 
+		android:id="@+id/prayer_title"
+		android:textSize="12sp"
+		android:textStyle="bold"
+		android:textColor="@color/dark_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:gravity="left"
+		/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:orientation="horizontal"
+		android:weightSum="4">
+					
+		<ImageView 
+			android:id="@+id/prayer_image"
+			android:layout_width="70dip"
+			android:layout_height="70dip"
+			android:layout_gravity="left|center_vertical"
+			android:scaleType="fitCenter"
+			android:adjustViewBounds="true"
+		/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left"
+			android:orientation="horizontal"
+			>
+
+			<LinearLayout
+			    android:layout_width="80dp"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="left"
+			    android:orientation="vertical"
+			    >
+				<TextView
+					android:text="@string/label_total_remain"
+					android:textColor="@color/dark_text"
+					android:gravity="center"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_gravity="center"
+					android:layout_margin="1dip"
+					android:textSize="12sp" />
+				<TextView android:id="@+id/amt_remain"
+					android:textSize="14sp"
+					android:background="@drawable/lite_background"
+					android:textColor="@color/red_text"
+					android:textStyle="bold"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_margin="1dip"
+					android:gravity="center"
+					/>
+				<TextView
+					android:text="@string/label_days_complete"
+					android:textColor="@color/dark_text"
+					android:gravity="center"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_gravity="center"
+					android:layout_margin="1dip"
+					android:textSize="12sp" />
+				
+				<TextView android:id="@+id/amt_complete"
+					android:textSize="14sp"
+					android:background="@drawable/lite_background"
+					android:textColor="@color/blue_text"
+					android:textStyle="bold"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_margin="1dip"
+					android:gravity="center"
+					/>
+				
+			</LinearLayout>
+			<Button
+				android:id="@+id/but_pray_plus"
+				android:layout_width="80dp"
+			    android:layout_height="80dp"
+			    android:layout_gravity="right|center_vertical"
+				android:background="@drawable/blue_plus"/>
+		</LinearLayout>
+	</LinearLayout>
+	<com.umda.debttodivine.TextProgressBar
+	    android:id="@+id/prog_remain"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="15dip"
+	    android:layout_gravity="center"
+	    android:layout_margin="5dip"
+	    android:paddingLeft="5dip"
+	    android:paddingRight="5dip" />
+</LinearLayout>

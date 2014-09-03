@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	<ListPreference 
+		android:key="profile_id"
+		android:title="@string/profile_title"
+		android:summary="@string/profile_summary"
+		/>
+	<Preference 
+		android:key="rem_profile"
+		android:title="Delete Profile"
+		android:summary="Click here to delete the current profile"
+		/>
+	<Preference 
+		android:key="edit_profile"
+		android:title="Edit Profile"
+		android:summary="Click here to edit the current profile name"
+		/>
+	<ListPreference 
+		android:key="type"
+		android:title="@string/type_title"
+		android:summary="@string/type_summary"
+		android:entries="@array/type_entries"
+		android:entryValues="@array/type_values"
+		/>
+	<ListPreference 
+		android:key="madhhab"
+		android:title="@string/madhhab_title"
+		android:summary="@string/madhhab_summary"
+		android:entries="@array/maddhab_entries"
+		android:entryValues="@array/maddhab_values"
+		/>
+	<ListPreference 
+		android:key="gender"
+		android:title="@string/gender_title"
+		android:summary="@string/gender_summary"
+		android:entries="@array/gender_entries"
+		android:entryValues="@array/gender_values"
+		/>
+	<PreferenceCategory 
+		android:key="debt_group"
+		android:orderingFromXml="true"
+		android:title="Debt Setup"
+		>
+		<Preference 
+			android:key="increment"
+			android:title="@string/increment_title"
+			android:summary="@string/increment_summary"
+			/>
+		<Preference 
+			android:key="debt_total"
+			android:title="@string/debt_total_title"
+			android:order="1"
+			/>
+		<EditTextPreference 
+			android:key="menst_total"
+			android:title="@string/menst_total_title"
+			android:order="2"
+			android:inputType="number"
+			/>
+	</PreferenceCategory>
+	<PreferenceCategory 
+		android:key="deadline_group"
+		android:orderingFromXml="true"
+		android:title="Deadline Setup">
+		
+		<CheckBoxPreference 
+			android:key="deadline_chk"
+			android:disableDependentsState="false"
+			android:title="Set Deadline"
+			android:summaryOn="Deadline set for Make ups"
+			android:summaryOff="Deadline not set for Make ups"
+			android:order="1"
+			android:defaultValue="false"	
+			/>
+		<Preference 
+			android:key="deadline_date"
+			android:title="Deadline Date"
+			android:order="2"
+			android:dependency="deadline_chk"
+			android:inputType="date"
+			/>
+	</PreferenceCategory>
+	<PreferenceCategory 
+		android:key="about_group"
+		android:title="About">
+		<Preference 
+			android:key="about"
+			android:title="About this App"
+			android:summary="About - Rate - Email - Website"
+			/>
+		<Preference 
+			android:key="helpsettings"
+			android:title="Help on Settings"
+			android:summary="Help on various Profile Settings"
+			/>
+	</PreferenceCategory>
+	<PreferenceCategory 
+		android:key="pro_group"
+		android:title="Pro Version">
+		<Preference 
+			android:key="unlock_pro"
+			android:title="Unlock Pro Version"
+			android:summary="Unlock Pro Version features of this app"
+			/>
+	</PreferenceCategory>
+</PreferenceScreen>

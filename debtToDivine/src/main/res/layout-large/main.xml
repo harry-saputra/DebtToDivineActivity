@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:baselineAligned="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="90dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="@drawable/lite_background"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+    		android:layout_gravity="center|center_vertical"
+		    android:layout_weight="1.70"
+		    android:gravity="center"
+		    android:orientation="vertical" >
+
+			<TextView
+			    android:id="@+id/lbl_profile_progress"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="15dip"
+			    android:padding="5dip"
+			    android:background="@drawable/label_background"
+			    android:gravity="center"
+			    android:text="@string/title_progress"
+			    android:textColor="@color/dark_text"
+			    android:textSize="30sp" 
+			    android:textStyle="bold"/>
+			<TextView
+			    android:id="@+id/lbl_profile_type"
+			    android:layout_width="300dp"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="2dip"
+			    android:padding="2dip"
+			    android:gravity="center"
+			    android:text="@string/profile_type"
+			    android:textColor="@color/dark_text"
+			    android:textSize="20sp" 
+			    android:textStyle="bold"/>
+			
+			<Button
+			    android:id="@+id/but_plus"
+			    android:layout_width="400dp"
+			    android:layout_height="400dp"
+			    android:layout_gravity="center_horizontal"
+			    android:background="@drawable/blue_plus"
+			    android:onClick="butPlusClick"
+				/>
+			
+			<com.umda.debttodivine.TextProgressBar
+				android:id="@+id/prog_remain"
+				style="?android:attr/progressBarStyleHorizontal" 
+				android:layout_margin="5dip"
+				android:layout_height="20dip" 
+				android:layout_width="match_parent"
+				android:layout_gravity="center"
+				android:paddingLeft="20dip"
+				android:paddingRight="20dip"
+				/>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_margin="0dip"
+				android:gravity="center" 
+				android:weightSum="1">
+				
+			   	<TextView
+				    android:id="@+id/txt_days_remain"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight=".45"
+				    android:layout_margin="5dip"
+					android:layout_gravity="left"
+					android:background="@drawable/label_background"
+				    android:gravity="center"
+				    android:padding="5dip"
+				    android:textColor="@color/red_text"
+				    android:textSize="15sp"
+				    android:textStyle="bold" />
+				<TextView
+					android:id="@+id/txt_days_complete"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight=".45"
+					android:layout_margin="5dip"
+					android:layout_gravity="right"
+					android:background="@drawable/label_background"
+					android:gravity="center"
+					android:padding="5dip"
+				    android:textColor="@color/blue_text"
+					android:textSize="15sp"
+					android:textStyle="bold"
+					/>
+				
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_margin="0dip"
+				android:gravity="center" 
+				android:weightSum="1">
+				
+				<TextView
+					android:text="@string/label_total_remain"
+					android:textColor="@color/dark_text"
+					android:gravity="center"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_weight=".45"
+				    android:layout_gravity="left"
+					android:layout_margin="5dip"
+					android:textSize="15sp" 
+					/>
+				<TextView
+					android:text="@string/label_days_complete"
+					android:textColor="@color/dark_text"
+					android:gravity="center"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_weight=".45"
+					android:layout_gravity="right"
+					android:layout_margin="5dip"
+					android:textSize="15sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+	    <RelativeLayout
+	        android:id="@+id/layout_deadline"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dip"
+	        android:layout_weight=".30" >
+
+	        <TextView
+	            android:id="@+id/lbl_days_till"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="5dip"
+	            android:paddingBottom="10dip"
+	            android:paddingLeft="10dip"
+	            android:gravity="left"
+	            android:text="@string/label_days_till"
+	            android:textColor="@color/dark_text"
+	            android:textSize="13sp" />
+
+	        <TextView
+	            android:id="@+id/days_till"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="15dip"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/lbl_days_till"
+	            android:background="@drawable/label_background"
+	            android:gravity="center"
+	            android:padding="5dip"
+	            android:textColor="@color/red_text"
+	            android:textSize="15sp"
+	            android:textStyle="bold" />
+
+	        <TextView
+	            android:id="@+id/lbl_days_per"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/lbl_days_till"
+	            android:layout_below="@+id/lbl_days_till"
+	            android:paddingLeft="10dip"
+	            android:gravity="left"
+	            android:text="@string/label_days_per"
+	            android:textColor="@color/dark_text"
+	            android:textSize="13sp" />
+
+	        <TextView
+	            android:id="@+id/days_per"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/lbl_days_per"
+	            android:layout_toLeftOf="@+id/lbl_days_per"
+	            android:layout_marginRight="15dip"
+	            android:background="@drawable/label_background"
+	            android:gravity="center"
+	            android:padding="5dip"
+	            android:text=""
+	            android:textColor="@color/red_text"
+	            android:textSize="15sp"
+	            android:textStyle="bold" />
+	    </RelativeLayout>
+ 
+	</LinearLayout>
+</LinearLayout>

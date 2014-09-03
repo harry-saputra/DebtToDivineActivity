@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+    	android:id="@+id/settings" 
+    	android:title="@string/settings_label"
+   		android:alphabeticShortcut="@string/settings_shortcut" 
+   		android:icon="@android:drawable/ic_menu_preferences"> 
+    </item>
+    <item 
+        android:icon="@drawable/ic_menu_prayer" 
+        android:alphabeticShortcut="@string/indiv_shortcut" 
+        android:id="@+id/indiv" 
+        android:title="@string/indiv_title">
+    </item>
+    <item 
+        android:icon="@drawable/share" 
+        android:alphabeticShortcut="l" 
+        android:id="@+id/logs" 
+        android:title="@string/logs">
+    </item>
+    <item 
+        android:icon="@drawable/share" 
+        android:alphabeticShortcut="h" 
+        android:id="@+id/share" 
+        android:title="@string/share">
+    </item>
+</menu>

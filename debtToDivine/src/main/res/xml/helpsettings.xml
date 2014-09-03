@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	<Preference 
+		android:key="infotype"
+		android:title="Debt Type Help"
+		android:summary="Help on selecting Debt Type in preferences"
+		/>
+	<Preference 
+		android:key="infomadhhab"
+		android:title="Madhhab Help"
+		android:summary="Help on selecting a Madhhab in preferences"
+		/>
+	<Preference 
+		android:key="infogender"
+		android:title="Gender Help"
+		android:summary="Help on selecting Gender in preferences"
+		/>
+	<Preference 
+		android:key="infodebttotal"
+		android:title="Debt Total Help"
+		android:summary="Help on selecting Debt Total in preferences"
+		/>
+	<Preference 
+		android:key="infomenst"
+		android:title="Menses and Lochia Help"
+		android:summary="Help on selecting Menses and Lochia total in preferences"
+		/>
+	<Preference 
+		android:key="infodeadline"
+		android:title="Deadline Help"
+		android:summary="Help on selecting Deadline in preferences"
+		/>
+
+</PreferenceScreen>

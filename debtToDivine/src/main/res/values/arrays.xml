@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<array name="maddhab_entries">
+		<item>@string/hanafi</item>
+		<item>@string/shafii</item>
+	</array>
+	<array name="maddhab_values">
+		<item>@string/hanafi</item>
+		<item>@string/shafii</item>
+	</array>
+	
+	<array name="gender_entries">
+		<item>@string/gender_male</item>
+		<item>@string/gender_female</item>
+	</array>
+	<array name="gender_values">
+		<item>@string/gender_male</item>
+		<item>@string/gender_female</item>
+	</array>
+	
+	<array name="type_entries">
+		<item>@string/type_prayer</item>
+		<item>@string/type_fasting</item>
+	</array>
+	<array name="type_values">
+		<item>@string/type_prayer</item>
+		<item>@string/type_fasting</item>
+	</array>
+	
+	<string-array name="hanafi_prayers">
+	    <item>@string/fajr</item>
+		<item>@string/dhuhr</item>
+	    <item>@string/asr</item>
+		<item>@string/maghrib</item>
+		<item>@string/isha</item>
+		<item>@string/witr</item>
+	</string-array>
+	<string-array name="other_prayers">
+	    <item>@string/fajr</item>
+		<item>@string/dhuhr</item>
+	    <item>@string/asr</item>
+		<item>@string/maghrib</item>
+		<item>@string/isha</item>
+	</string-array>
+</resources>

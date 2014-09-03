@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.umda.debttodivine"
+      android:versionCode="16"
+      android:versionName="1.5.1"
+      >
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="com.android.vending.BILLING" />
+	<!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+	
+	<application android:icon="@drawable/ic_debttodivine" android:allowBackup="true" android:label="@string/app_name"><!-- android:debuggable="true" -->
+        <activity android:name=".DebtToDivineActivity"
+                  android:label="@string/debt_title"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity 
+		    android:name=".Settings"
+			android:label="@string/settings_title" 
+			android:screenOrientation="portrait"
+			>
+		</activity>
+		<activity 
+		    android:name=".HelpSettings"
+			android:label="@string/helpsettings_title" 
+			android:screenOrientation="portrait"
+			>
+		</activity>
+		<activity 
+		    android:name=".IndividualPrayerActivity"
+			android:label="@string/indiv_title" 
+			android:screenOrientation="portrait"
+			> 
+		</activity>
+		<activity 
+		    android:name=".AboutActivity"
+			android:label="@string/about_title" 
+			android:screenOrientation="portrait"
+			>
+		</activity>
+		<activity 
+		    android:name=".InfoActivity"
+			android:label="@string/infopages_title" 
+			android:screenOrientation="portrait"
+			>
+		</activity>
+		<activity 
+		    android:name=".PurchaseActivity"
+			android:label="@string/purchase_title" 
+			android:screenOrientation="portrait"
+			>
+        </activity>
+        <activity 
+		    android:name=".LogsActivity"
+			android:label="@string/logs_title" 
+			android:screenOrientation="portrait"
+			>
+        </activity>
+        <activity 
+		    android:name=".DateActivity"
+			android:label="@string/date_title" 
+			android:screenOrientation="portrait"
+			>
+		</activity>
+    </application>
+</manifest>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Debt To Divine</string>
+    
+    <string name="title_progress">Progress</string>
+    <string name="profile_type">Type</string>
+    <string name="label_total_remain">Remaining</string>
+    <string name="label_days_complete">Completed</string>
+    <string name="label_days_till">Days until deadline:</string>
+    <string name="label_days_per">Days per day:</string>
+    
+    <string name="cancel">Cancel</string>   
+    <color name="red_text">#aaff0000</color>
+    <color name="dark_text">#FF212121</color>
+    <color name="blue_text">#aa2C2FE8</color>
+    
+    <color name="greenStart">#ff33dd44</color>  
+	<color name="greenMid">#ff0A8815</color>  
+	<color name="greenEnd">#ff1da130</color> 
+    <color name="redStart">#FFFAB6B6</color>  
+	<color name="redMid">#FFE60202</color>  
+	<color name="redEnd">#FFF26161</color> 
+    <color name="yellowStart">#ffFFFDBA</color>  
+	<color name="yellowMid">#ffEBE300</color>  
+	<color name="yellowEnd">#ffFAF56B</color> 
+	<color name="orangeStart">#ffFFE0BF</color>  
+	<color name="orangeMid">#ffFF8400</color>  
+	<color name="orangeEnd">#ffFFB86B</color>     
+ 	
+	<string name="debt_title">Debt To The Divine</string>
+    
+    <string name="settings_title">Settings</string>
+    <string name="settings_label">Settings</string>
+    <string name="settings_shortcut">s</string>
+    
+    <string name="share">Share Tallies</string>
+    
+    <string name="logs">Tally Logs</string>
+    <string name="undo">Undo</string>
+    
+    <string name="indiv_title">Prayers</string>
+    <string name="indiv_shortcut">p</string>
+    
+    <string name="logs_title">Tally Logs</string>
+    <string name="purchase_title">Purchase Pro Version</string>
+    <string name="infopages_title">Information Page</string>
+    <string name="helpsettings_title">Help on Settings</string>
+    
+    <string name="about_title">About</string>
+    <string name="date_title">Select Date</string>
+    
+    <string name="profile_title">Profile ID</string>
+    <string name="profile_summary">Select or Add a Profile</string>
+    
+    <string name="type_title">Profile Type</string>
+    <string name="type_summary">Select Profile Type</string>
+    <string name="type_prayer">Prayer</string>
+    <string name="type_fasting">Fasting</string>
+    
+    <string name="madhhab_title">Madhhab</string>
+    <string name="madhhab_summary">Select your madhhab</string>
+    <string name="hanafi">Hanafi</string>
+    <string name="shafii">Shafii</string>
+   	<string name="maliki">Maliki</string>
+   	<string name="hanbali">Hanbali</string>
+   
+    <string name="gender_title">Gender</string>
+    <string name="gender_summary">Select Gender</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    
+    <string name="debt_group_title">Debt Setup</string>
+    
+    <string name="increment_title">Increment</string>
+    <string name="increment_summary">Set the increment count when you click the Plus Button</string>
+    
+    <string name="debt_total_title">Debt Total</string>
+    <string name="debt_total_summary">Set the number of days to make up</string>
+    
+    <string name="menst_total_title">Menses and Lochia Total</string>
+    <string name="menst_total_summary">Set the total days to exclude due to menstruation or lochia</string>
+    
+    <string name="alert_dialog_days_complete">Days Completed</string>
+    <string name="alert_dialog_new_profile">New Profile ID</string>
+    <string name="alert_dialog_edit_profile">Edit Profile ID</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="alert_dialog_yes">Yes</string>
+    <string name="alert_dialog_no">No</string>
+    
+    <string name="cannot_connect">Cannot Connect to Market</string>
+    <string name="billing_unsupported">Billing not Supported</string>
+    <string name="unlock_pro">Unlock Pro Version</string>
+    
+    <string name="fajr">Fajr</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="witr">Witr</string>
+    
+</resources>
